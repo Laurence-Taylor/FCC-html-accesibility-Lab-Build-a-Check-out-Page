@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+    <style>
+        body{
+            font-family:arial;
+        }
+    </style>
+</head>
+
+<body>
+  <h1>Checkout</h1>
+  <section>
+      <h2>Your Cart</h2>
+      <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Standard 3 x 3 Rubik's Cube" />
+          <figcaption>Standard 3 x 3 Rubik's Cube</figcaption>
+          <br></br>
+          <label>Price: $ 5.55</label>
+      </figure>
+  </section>
+  <section>
+      <h2>Payment Information</h2>
+      <form>
+          <fieldset>
+              <label for="card-name">Cardholder's Name: <span aria-hidden="true" style="color:red">*</span></label>
+              <input type="text" id="card-name" name="card-name" required="true"/>
+              <br></br>
+              <label for="card-number">Card Number: <span aria-hidden="true" style="color:red">*</span></label>
+              <input type="text" id="card-number" name="card-number" aria-describedby="card-number-help"/ required="true" pattern="[1-9][0-9]{16}">
+              <p id="card-number-help">Please enter your 16-digit card number without spaces or dashes.</p>
+              <label for="card-expire-date">Expire Date: <span aria-hidden="true" style="color:red">*</span></label>
+              <input type="text" id="card-expire-date" name="card-expire-date" placeholder="mm/yy"/ required="true">
+              <br></br>
+              <label for="cvv-code">CVV: <span aria-hidden="true" style="color:red">*</span></label>
+              <input type="text" id="cvv-code" name="cvv-code" required="true">
+          </fieldset>
+          <br></br>
+          <input type="submit" value="Place Order">
+      </form>
+  </section>
+</body>
+</html>
